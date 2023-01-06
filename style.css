@@ -9,6 +9,9 @@ body {
 
 /* Navigation Bar */
 
+
+
+
 .topnav {
     position: absolute;
     overflow: hidden;
@@ -50,6 +53,9 @@ nav li {
 
 /* Landing Page */
 
+
+
+
 h1 {
     font-size: 60px;
     font-family: 'Montserrat', sans-serif;
@@ -67,13 +73,14 @@ a:link {
 }
 
 .heading {
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
-    text-decoration: none; 
+    text-decoration: none;
+    margin-top: -20px;  
 }
 
-/* bar line */
+/* bar line next line below */
 hr {
         width: 20%;
         height: 2px;
@@ -86,15 +93,24 @@ hr {
         opacity: 50%;
     }
 
-.landingPage {
+.landingPageTitles {
     text-align: center;
-    font-size: 80px;
+    font-size: 110px;
 }
 
-.heading {
-    font-size: 15px;
+.welcomeTitle {
     font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    text-decoration: none;
-    margin-top: -20px;  
 }
+
+.resumeTitle {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aboutTitle {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contactTitle {
+    font-family: 'Montserrat', sans-serif;
+}
+
