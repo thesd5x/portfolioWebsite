@@ -1,14 +1,64 @@
 /*Universal Code */
 
+
+
 body {
     background: #C1E1C1;
     color: white;
 }
 
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+    background: #F1F1F1;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+    background: #D9B382;
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+/* Social Media Logos */
+
+
+
+.socialBanner {
+    position: absolute;
+}
+
+.githubLogo {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    top: -1260px;
+    left: 185px;
+}
+
+.linkedinLogo {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    top: -1260px;
+    left: 265px;
+    
+}
+
+
 
 
 /* Navigation Bar */
-
 
 
 
@@ -59,12 +109,13 @@ nav li {
 h1 {
     font-size: 60px;
     font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    text-decoration: none;
     }
 
 .title {
     color: white;
+    text-align: left;
+    text-decoration: none;
+    margin-left: 40px;
 }
 
 
@@ -77,10 +128,11 @@ a:link {
     font-family: 'Montserrat', sans-serif;
     text-align: left;
     text-decoration: none;
-    margin-top: -20px;  
+    margin-top: -20px;
+    margin-left: 10px;  
 }
 
-/* bar line next line below */
+/* bar line*/
 hr {
         width: 20%;
         height: 2px;
@@ -96,6 +148,7 @@ hr {
 .landingPageTitles {
     text-align: center;
     font-size: 110px;
+    text-align-last: 80px;
 }
 
 .welcomeTitle {
@@ -112,4 +165,117 @@ hr {
 
 .contactTitle {
     font-family: 'Montserrat', sans-serif;
+}
+
+/* on contact page only */
+.miniJordan {
+    position: absolute;
+    max-width: 26%;
+    height: auto;
+    top: -80px;
+    left: 670px;
+}
+
+
+
+
+/* Landing Title Overlays */
+
+
+
+/* resume -- css overlay */
+/* container needed to position the overlay */
+.keyboardContainer {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* makes image below responsive */
+.keyboard {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.keyboardOverlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.5); /* black see-through */
+    color: #F1F1F1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* hovering over the container fades the overlay title*/
+.keyboardContainer:hover .keyboardOverlay {
+    opacity: 1;
+}
+
+
+/* contact -- css overlay */
+/* container needed to position the overlay */
+.contactContainer {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* makes image below responsive */
+.contact {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.contactOverlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.5); /* black see-through */
+    color: #F1F1F1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* hovering over the container fades the overlay title*/
+.contactContainer:hover .contactOverlay {
+    opacity: 1;
+}
+
+
+
+
+/* Resume Page */
+
+
+
+.techResumeDownload {
+    position: absolute;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%);
+}
+
+.resumeListing {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+}
+
+.resumeText {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.resumeFrame {
+    display: inline-block;
+    height: 1000px;
+    width: 80%;
+    margin-inline: 190px;
 }
