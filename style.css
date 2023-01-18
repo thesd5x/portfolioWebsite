@@ -28,6 +28,17 @@ body {
     background: #555;
 }
 
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footerText {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 14px;
+}
 
 
 /* Social Media Logos */
@@ -35,23 +46,23 @@ body {
 
 
 .socialBanner {
-    position: absolute;
+    position: static;
 }
 
 .githubLogo {
-    position: absolute;
+    position: static;
     width: 40px;
-    height: auto;
-    top: -1260px;
-    left: 185px;
+    margin-left: 150px;
+  
+
 }
 
 .linkedinLogo {
-    position: absolute;
+    position: static;
     width: 40px;
-    height: auto;
-    top: -1260px;
-    left: 265px;
+   margin-left: 80px;
+    
+
     
 }
 
@@ -101,7 +112,7 @@ nav li {
 
 
 
-/* Landing Page */
+/* Welcome Page */
 
 
 
@@ -173,7 +184,7 @@ hr {
     max-width: 26%;
     height: auto;
     top: -80px;
-    left: 670px;
+    left: 730px;
 }
 
 
@@ -278,4 +289,26 @@ hr {
     height: 1000px;
     width: 80%;
     margin-inline: 190px;
+    padding-block: 50px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
