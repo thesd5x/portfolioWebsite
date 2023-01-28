@@ -8,6 +8,7 @@ body {
 }
 
 /* scrollbar */
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -46,38 +47,108 @@ body {
 
 
 .socialBanner {
-    position: static;
+    display: block;
+    margin-left: auto;
+    margin-right: 50px;
+    max-width: 50%;
 }
 
 .githubLogo {
     position: static;
-    width: 40px;
-    margin-left: 150px;
-  
-
+    width: 30px;
+    padding: 6px;
 }
 
 .linkedinLogo {
     position: static;
-    width: 40px;
-   margin-left: 80px;
-    
-
-    
+    width: 30px;
+    padding: 6px;
 }
 
+.summary-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    text-align: center;
+}
 
+.summary-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    text-align: center;  
+}
 
 
 /* Navigation Bar */
 
 
 
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-width: 640px) {
+    .summary-title {
+        font-size: 60px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        visibility: hidden; 
+        }  
+    
+    .summary-heading {
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        visibility: hidden;
+    }
+    .firstAndLastName {
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+    .summaryLabel {
+        font-size: 25px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+}
+
+    
+/* For screens with a min-width of 641px */
+    @media screen and (min-width: 641px) {
+        .firstAndLastName {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            visibility: visible;
+        }
+        .summaryLabel {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            visibility: visible;
+        }
+        .summary-title {
+            text-align: center;
+            visibility: visible;
+        }
+    }
+    
 .topnav {
-    position: absolute;
-    overflow: hidden;
-    display: flex;
-    right: 0px;
+    font-family:'Montserrat', sans-serif;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+}
+
+.firstAndLastName {
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+.label.firstAndLastName {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
 }
 
 .topnav a.active {
@@ -93,14 +164,15 @@ body {
     text-decoration: none;
 }
 
-a:hover {
+.topnav a:hover {
     font-family: 'Montserrat', sans-serif;
     color: white;
     background-color: #FFD1DC;
     opacity: 80%;
+    transition: .5;
 }
 
-nav li {
+.topnav li {
     display: inline-block;
     justify-content: center;
     list-style: none;
@@ -113,7 +185,6 @@ nav li {
 
 
 /* Welcome Page */
-
 
 
 
@@ -134,36 +205,10 @@ a:link {
     text-decoration: none;
 }
 
-.heading {
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    text-decoration: none;
-    margin-top: -20px;
-    margin-left: 10px;  
-}
-
-/* bar line*/
-hr {
-        width: 20%;
-        height: 2px;
-        border: 0 none;
-        margin-right: 40px;
-        margin-left: auto;
-        margin-top: 10px;
-        margin-bottom:90px;
-        background-color:#B5B5B5;
-        opacity: 50%;
-    }
-
 .landingPageTitles {
     text-align: center;
     font-size: 110px;
     text-align-last: 80px;
-}
-
-.welcomeTitle {
-    font-family: 'Montserrat', sans-serif;
 }
 
 .resumeTitle {
@@ -178,14 +223,7 @@ hr {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* on contact page only */
-.miniJordan {
-    position: absolute;
-    max-width: 26%;
-    height: auto;
-    top: -80px;
-    left: 730px;
-}
+
 
 
 
@@ -295,20 +333,15 @@ hr {
 
 
 
+/* About Page */
 
 
 
 
 
 
+/* Contact Page */
 
 
 
-
-
-
-
-
-
-
-
+/* on contact page only */
