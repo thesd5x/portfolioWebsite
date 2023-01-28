@@ -55,27 +55,16 @@ body {
 
 .githubLogo {
     position: static;
-    width: 30px;
+    width: 35px;
     padding: 6px;
 }
 
 .linkedinLogo {
     position: static;
-    width: 30px;
+    width: 35px;
     padding: 6px;
 }
 
-.summary-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 45px;
-    text-align: center;
-}
-
-.summary-heading {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    text-align: center;  
-}
 
 
 /* Navigation Bar */
@@ -85,19 +74,6 @@ body {
 
 /* For Mobile Phones Portrait or Landscape View */
 @media screen and (max-width: 640px) {
-    .summary-title {
-        font-size: 60px;
-        font-family: 'Montserrat', sans-serif;
-        text-align: center;
-        visibility: hidden; 
-        }  
-    
-    .summary-heading {
-        font-size: 15px;
-        font-family: 'Montserrat', sans-serif;
-        text-align: center;
-        visibility: hidden;
-    }
     .firstAndLastName {
         font-size: 30px;
         font-family: 'Montserrat', sans-serif;
@@ -108,9 +84,12 @@ body {
         font-family: 'Montserrat', sans-serif;
         text-align: center;
     }
+    .landingPageTitles {
+        text-align: center;
+        visibility: hidden;
+    }
 }
 
-    
 /* For screens with a min-width of 641px */
     @media screen and (min-width: 641px) {
         .firstAndLastName {
@@ -120,10 +99,7 @@ body {
         }
         .summaryLabel {
             font-family: 'Montserrat', sans-serif;
-            text-align: center;
-            visibility: visible;
-        }
-        .summary-title {
+            font-size: 40px;
             text-align: center;
             visibility: visible;
         }
@@ -131,7 +107,6 @@ body {
     
 .topnav {
     font-family:'Montserrat', sans-serif;
-    height: 80px;
     width: 100%;
     text-align: center;
 }
@@ -139,16 +114,17 @@ body {
 .firstAndLastName {
     font-family:'Montserrat', sans-serif;
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
+    animation: glow 3s ease-in-out infinite alternate;
 }
 
-.label.firstAndLastName {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #E60073, 0 0 20px #E60073, 0 0 25px #E60073, 0 0 30px #E60073, 0 0 35px #E60073;
+    }
+    to {
+        text-shadow: 0 0 15px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6;
+    }
 }
 
 .topnav a.active {
@@ -160,7 +136,7 @@ body {
     float: none;
     text-align: center;
     color: #B5B5B5;
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
 }
 
