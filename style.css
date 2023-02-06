@@ -4,6 +4,7 @@
 
 body {
     background: #C1E1C1;
+    border: 5px solid #FFD1DC;
     color: white;
 }
 
@@ -115,10 +116,10 @@ body {
     font-family:'Montserrat', sans-serif;
     text-align: center;
     font-size: 60px;
-    animation: glow 3s ease-in-out infinite alternate;
+    animation: glow 1.5s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glow {
+@keyframes glow {
     from {
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #E60073, 0 0 20px #E60073, 0 0 25px #E60073, 0 0 30px #E60073, 0 0 35px #E60073;
     }
@@ -282,10 +283,28 @@ a:link {
 
 
 
-.techResumeDownload {
-    position: absolute;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%);
+.techStackContainer01 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    text-align: center;
 }
+
+
+.techStackContainer02 {
+    display: grid;
+    gap: 5em;
+    height: 15vh;
+    max-width: 100%;
+    position: relative;
+    width: auto;
+}
+
+.techImg {
+    height: 180px;
+    position: absolute;
+    width: 80%;
+}
+
 
 .resumeListing {
     text-align: center;
@@ -319,5 +338,10 @@ a:link {
 /* Contact Page */
 
 
+
+.techResumeDownload {
+    position: absolute;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%);
+}
 
 /* on contact page only */
