@@ -8,7 +8,20 @@ body {
     color: white;
 }
 
-/* scrollbar */
+.footer {
+    color: #D9B382;
+    font-weight: bolder;
+}
+
+.footerText {
+    color: #D9B382;
+    font-style: bolder;
+}
+
+
+
+
+/* Site Scrollbar */
 
 /* width */
 ::-webkit-scrollbar {
@@ -43,6 +56,7 @@ body {
 }
 
 
+
 /* Social Media Logos */
 
 
@@ -73,47 +87,14 @@ body {
 
 
 
-/* For Mobile Phones Portrait or Landscape View */
-@media screen and (max-width: 640px) {
-    .firstAndLastName {
-        font-size: 30px;
-        font-family: 'Montserrat', sans-serif;
-        text-align: center;
-    }
-    .summaryLabel {
-        font-size: 25px;
-        font-family: 'Montserrat', sans-serif;
-        text-align: center;
-    }
-    .landingPageTitles {
-        text-align: center;
-        visibility: hidden;
-    }
-}
-
-/* For screens with a min-width of 641px */
-    @media screen and (min-width: 641px) {
-        .firstAndLastName {
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-            visibility: visible;
-        }
-        .summaryLabel {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 40px;
-            text-align: center;
-            visibility: visible;
-        }
-    }
-    
 .topnav {
-    font-family:'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     width: 100%;
     text-align: center;
 }
 
 .firstAndLastName {
-    font-family:'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 60px;
     animation: glow 1.5s ease-in-out infinite alternate;
@@ -123,6 +104,7 @@ body {
     from {
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #E60073, 0 0 20px #E60073, 0 0 25px #E60073, 0 0 30px #E60073, 0 0 35px #E60073;
     }
+
     to {
         text-shadow: 0 0 15px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 80px #ff4da6;
     }
@@ -156,7 +138,7 @@ body {
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     padding: 0 20px;
-    
+
 }
 
 
@@ -168,7 +150,7 @@ body {
 h1 {
     font-size: 60px;
     font-family: 'Montserrat', sans-serif;
-    }
+}
 
 .title {
     color: white;
@@ -183,58 +165,64 @@ a:link {
 }
 
 .landingPageTitles {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
     text-align: center;
-    font-size: 110px;
-    text-align-last: 80px;
-}
-
-.resumeTitle {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.aboutTitle {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.contactTitle {
-    font-family: 'Montserrat', sans-serif;
+    height: 10vh;
 }
 
 
 
 
-
-
-/* Landing Title Overlays */
-
-
+/* landing title overlays */
+.titleOverlays {
+    align-items: center;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
 
 /* resume -- css overlay */
 /* container needed to position the overlay */
 .keyboardContainer {
+    height: 250px;
+    max-height: 100%;
+    max-width: 100%;
     position: relative;
     width: 100%;
-    max-width: 300px;
 }
 
 /* makes image below responsive */
 .keyboard {
     display: block;
-    width: 100%;
-    height: auto;
+    width: 900px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
 }
 
 .keyboardOverlay {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0,0,0,0.5); /* black see-through */
-    color: #F1F1F1;
-    width: 100%;
-    transition: .5s ease;
-    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* black see-through */
+    bottom: 225px;
     color: white;
+    display: block;
     font-size: 20px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    position: relative;
     text-align: center;
+    transition: .5s ease;
+    width: 900px;
+}
+
+.resumeText {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 3em;
+    position: relative;
 }
 
 /* hovering over the container fades the overlay title*/
@@ -242,40 +230,100 @@ a:link {
     opacity: 1;
 }
 
+/* about -- css overlay */
+/* container needed to position the overlay */
+.aboutContainer {
+    height: 250px;
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.writing {
+    display: block;
+    width: 900px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+.aboutOverlay {
+    background: rgba(0, 0, 0, 0.5);
+    /* black see-through */
+    bottom: 225px;
+    color: white;
+    display: block;
+    font-size: 20px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    position: relative;
+    text-align: center;
+    transition: .5s ease;
+    width: 900px;
+}
+
+.aboutText {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 3em;
+    position: relative;
+}
+
+/* hovering over the container fades the overlay title */
+.aboutContainer:hover .aboutOverlay {
+    opacity: 1;
+}
 
 /* contact -- css overlay */
 /* container needed to position the overlay */
 .contactContainer {
+    height: 250px;
+    max-height: 100%;
+    max-width: 100%;
     position: relative;
     width: 100%;
-    max-width: 300px;
 }
 
 /* makes image below responsive */
 .contact {
     display: block;
-    width: 100%;
-    height: auto;
+    width: 900px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
 }
 
 .contactOverlay {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0,0,0,0.5); /* black see-through */
-    color: #F1F1F1;
-    width: 100%;
-    transition: .5s ease;
-    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* black see-through */
+    bottom: 225px;
     color: white;
+    display: block;
     font-size: 20px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    position: relative;
     text-align: center;
+    transition: .5s ease;
+    width: 900px;
+}
+
+.contactText {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 3em;
+    position: relative;
 }
 
 /* hovering over the container fades the overlay title*/
 .contactContainer:hover .contactOverlay {
     opacity: 1;
 }
-
 
 
 
@@ -292,17 +340,17 @@ a:link {
 
 .techStackContainer02 {
     display: grid;
-    gap: 5em;
-    height: 15vh;
+    height: 25vh;
     max-width: 100%;
-    position: relative;
     width: auto;
 }
 
 .techImg {
     height: 180px;
-    position: absolute;
-    width: 80%;
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    width: auto;
 }
 
 
@@ -312,7 +360,7 @@ a:link {
     font-size: 60px;
 }
 
-.resumeText {
+.resumeGreeting {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
@@ -332,6 +380,67 @@ a:link {
 
 
 
+.typingText {
+    background: var(--bg-color);
+    display: grid;
+    font-family: 'Source Code Pro', monospace;
+    place-content: center;
+    margin: 0;
+    min-height: 50vh;
+    text-align: center;
+
+}
+
+.firstLine {
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    font-family: 'Source Code Pro', monospace;
+    position: relative;
+    text-align: center;
+    width: max-content;
+    --bg-color: rgba(193, 225, 193);
+    --typewriterSpeed: 5.5s;
+    --typewriterCharacters: 35;
+}
+
+.firstLine::before,
+.firstLine:after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.firstLine::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.firstLine::after {
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards, blink 750ms steps(var(--typewriterCharacters)) infinite;
+    background: black;
+    width: 0.125em;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 
@@ -345,3 +454,103 @@ a:link {
 }
 
 /* on contact page only */
+
+
+
+
+/* Media Queries */
+
+
+
+
+/* For TV and Extra Large Screens */
+@media screen and (min-width: 1201px) {
+    .firstAndLastName {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        visibility: visible;
+    }
+
+    .summaryLabel {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+        text-align: center;
+        visibility: visible;
+    }
+
+    .titleOverlays {
+        visibility: visible;
+    }
+
+    .landingPageTitles {
+        visibility: hidden;
+    }
+}
+
+/*For Large Screen and Desktops */
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+    .firstAndLastName {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        visibility: visible;
+    }
+
+    .summaryLabel {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+        text-align: center;
+        visibility: visible;
+    }
+
+    .titleOverlays {
+        visibility: visible;
+    }
+
+    .landingPageTitles {
+        visibility: hidden;
+    }
+}
+
+
+/* For Laptops and Small Screens */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {}
+
+/* For iPads and Tablets */
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    .firstAndLastName {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        visibility: visible;
+    }
+
+    .summaryLabel {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+        text-align: center;
+        visibility: visible;
+    }
+
+    .titleOverlays {
+        visibility: hidden;
+    }
+}
+
+/* For Mobile Devices */
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    .firstAndLastName {
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+
+    .summaryLabel {
+        font-size: 25px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+
+    .landingPageTitles {
+        visibility: visible;
+    }
+
+}
