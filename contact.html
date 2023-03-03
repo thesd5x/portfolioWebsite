@@ -40,13 +40,20 @@
     </nav>
 
     <br><br>
-
+    <br><br>
     <br><br>
 
 
-    <h2>Contact</h2>
-    <div class="contactForm">
+    <h2 class="contactTitle">Contact.</h2>
+    <br><br>
+    <div class="contactForm mt-5">
         <form action="form/submit" method="POST">
+            <!--Honeypot-->
+            <input type="text" name="_honey" style="display: none;">
+
+            <!--Disable Captcha-->
+            <input type="hidden" name="_captcha" value="false">
+
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="name" placeholder="Please enter your first name">
             <label for="lname">Last Name</label>
@@ -54,12 +61,14 @@
             <label for="mail">E-mail</label>
             <input type="text" id="mail" name="e-mail" placeholder="Please provide your email below">
             <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Type your message here..."></textarea>
+            <textarea id="message" name="message" placeholder="Type your message here..."
+                style="height: 200px"></textarea>
             <input type="submit" value="Signed. Sealed. Delivered.">
         </form>
-    </div>        
+    </div>
 
-<br><br>
+    <br><br>
+    <br><br>
 
 
 
