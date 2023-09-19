@@ -6,6 +6,8 @@ body {
     background: #C1E1C1;
     border: 5px solid #FFD1DC;
     color: white;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer {
@@ -143,7 +145,7 @@ body {
 
 
 
-/* Welcome Page */
+/* Index Page */
 
 
 
@@ -367,8 +369,9 @@ a:link {
 
 .resumeFrame {
     display: inline-block;
-    height: 1000px;
     width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     margin-inline: 190px;
     padding-block: 50px;
 }
@@ -444,7 +447,7 @@ a:link {
 
 
 
- /* Contact Page*/
+/* Contact Page*/
 
 
 
@@ -467,7 +470,9 @@ a:link {
     width: 50%;
 }
 
-input[type=text],select,textarea {
+input[type=text],
+select,
+textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-family: 'Source Code Pro', monospace;
@@ -548,7 +553,21 @@ input[type=submit]:hover {
 
 
 /* For Laptops and Small Screens */
-@media only screen and (max-width: 1024px) and (min-width: 769px) {}
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .firstAndLastName {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        visibility: visible;
+    }
+
+    .summaryLabel {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+        text-align: center;
+        visibility: visible;
+    }
+
+}
 
 /* For iPads and Tablets */
 @media only screen and (max-width: 768px) and (min-width: 481px) {
@@ -571,7 +590,7 @@ input[type=submit]:hover {
 }
 
 /* For Mobile Devices */
-@media only screen and (max-width: 480px) and (min-width: 320px) and (max-height: 1000px) {
+@media all and (max-width: 480px) and (min-width: 0px) {
     .firstAndLastName {
         font-size: 30px;
         font-family: 'Montserrat', sans-serif;
