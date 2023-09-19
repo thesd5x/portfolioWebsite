@@ -444,84 +444,7 @@ a:link {
 
 
 
-/* Contact Page */
-
-
-
-.techResumeDownload {
-    position: absolute;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%);
-}
-
-
-/* contact form css */
-label {
-    color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-}
-
-.contactForm {
-    background-color: #C1E1C1;
-    border: 8px solid #D9B382;
-/* offset-x | offset-y | blur-radius | spread-radius | color */
-    box-shadow: 8px 8px 8px 4px rgba(0, 0, 0, 0.2);
-    border-radius: 16px;
-    display: block;
-    margin: 0 auto;
-    max-width: 330px;
-    padding: 10px 10px 10px 10px;
-}
-
-.contactTitle {
-    font-family:'Montserrat', sans-serif;
-    font-size: 60px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.form {
-    padding: 10px 10px 0 0;
-}
-
-input,
-textarea {
-    border: 5px solid #FFFFFF;
-    border-radius: 3px;
-    box-sizing: border-box;
-    font-family: 'Source Code Pro', monospace;
-    padding: 0 5px;
-    resize: none;
-    width: 100%;
-}
-
-
-input[type=text],
-select,
-textarea {
-    border: 1px solid #EEEEEE;
-    border-radius: 16px;
-    box-sizing: border-box;
-    margin-bottom: 16px;
-    margin-top: 16px;
-    padding: 8px;
-    resize: vertical;
-    width: 100%;
-}
-
-input[type=submit] {
-    background-color: #FFD1DC;
-    border: none;
-    border-radius: 7px;
-    color: #FFFFFF;
-    cursor: pointer;
-    padding: 12px 20px;
-}
-
-input[type=submit]:hover {
-    background-color: #6fe8d7;
-}
-
+ 
 
 
 
@@ -625,7 +548,10 @@ input[type=submit]:hover {
     }
 
     .landingPageTitles {
-        visibility: visible;
+        visibility: hidden;
     }
 
+    .titleOverlays {
+        visibility: hidden;
+    }
 }
