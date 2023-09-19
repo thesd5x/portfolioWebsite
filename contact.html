@@ -43,10 +43,15 @@
     <br><br>
     <br><br>
 
+<style>
+    body {
+        font-family: 'Monserrat', sans-serif;
+    }
+</style>
 
-    <h2 class="contactTitle">Contact.</h2>
-    <br><br>
-    <div class="contactForm mt-5">
+    <h2 class="contactTitle">hello.</h2>
+    <br>
+    <div class="contactForm">
         <form action="form/submit" method="POST">
             <!--Honeypot-->
             <input type="text" name="_honey" style="display: none;">
@@ -54,15 +59,25 @@
             <!--Disable Captcha-->
             <input type="hidden" name="_captcha" value="false">
 
-            <label for="fname">First Name</label>
+            <div class="fname">First Name</div>
             <input type="text" id="fname" name="name" placeholder="Please enter your first name">
-            <label for="lname">Last Name</label>
+
+            <div class="lname">Last Name</div>
             <input type="text" id="lname" name="surname" placeholder="Please enter your last name">
-            <label for="mail">E-mail</label>
+
+            <div class="mail">E-mail</div>
             <input type="text" id="mail" name="e-mail" placeholder="Please provide your email below">
-            <label for="message">Message</label>
+
+            <div class="number">Phone Number</div>
+            <input type="text" id="phone" name="phone" placeholder="(   )   -    ">
+
+            <div class="message">Message</div>
             <textarea id="message" name="message" placeholder="Type your message here..."
                 style="height: 200px"></textarea>
+
+            <div class="contactCheckbox">Please check this box if this form contains information that would not alert your local police 🙂
+                <input type="checkbox" name="noPoPo">
+            </div>
             <input type="submit" value="Signed. Sealed. Delivered.">
         </form>
     </div>
