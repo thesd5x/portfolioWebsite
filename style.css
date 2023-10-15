@@ -341,17 +341,22 @@ a:link {
 
 
 .techStackContainer02 {
+    background: #D9B382;
+    border: 15px dotted #FFD1DC;
+    border-radius: 10px 100px / 120px 100px;
     display: grid;
     height: 25vh;
+    margin: 20px;
     max-width: 100%;
+    padding: 100px;
     width: auto;
 }
 
 .techImg {
     height: 180px;
     text-align: center;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 90px;
+    margin-right: 90px;
     width: auto;
 }
 
@@ -376,6 +381,18 @@ a:link {
     padding-block: 50px;
 }
 
+.resumeVerbiage {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.stackHeaderFrontEnd {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    white-space: nowrap;
+    word-spacing: 50px;
+}
 
 
 
